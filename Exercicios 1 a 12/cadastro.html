@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos e Carga Horária</title>
+    <link rel="stylesheet" href="estilo.css"> 
+</head>
+<body>
+    <h1>Cadastro de Alunos e Carga Horária</h1>
+    
+    <form action="cadastro.php" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="matricula">Matrícula:</label>
+        <input type="text" id="matricula" name="matricula" required>
+
+        <label for="curso">Curso:</label>
+        <input type="text" id="curso" name="curso" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone">
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco">
+
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep">
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade">
+
+        <label for="uf">UF:</label>
+        <input type="text" id="uf" name="uf" maxlength="2">
+
+        <label for="curso_horas">Curso para Horas Complementares:</label>
+        <input type="text" id="curso_horas" name="curso_horas">
+
+        <label for="carga_horaria">Carga Horária:</label>
+        <input type="number" id="carga_horaria" name="carga_horaria" required>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>

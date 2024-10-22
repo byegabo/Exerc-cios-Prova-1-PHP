@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca e Exclusão de Alunos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <section>
+        <h2>Buscar Alunos</h2>
+        <form action="buscar.php" method="POST">
+            <label for="nome">Nome do Aluno:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="matricula">Matrícula:</label>
+            <input type="text" id="matricula" name="matricula">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+
+            <input type="submit" value="Buscar">
+        </form>
+    </section>
+
+    <section>
+        <h2>Excluir Aluno</h2>
+        <form action="excluir.php" method="POST">
+            <label for="nome">Nome do Aluno:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="matricula">Matrícula:</label>
+            <input type="text" id="matricula" name="matricula">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+
+            <input type="submit" value="Excluir">
+        </form>
+    </section>
+</body>
+</html>
